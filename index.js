@@ -22,7 +22,7 @@ setInterval(() => {
     setTimeout(() => {
         carouselImage.src = images[currentIndex];
         carouselImage.style.opacity = 1; // Termina la transición de desvanecimiento
-    }, 500); // Tiempo de la transición de desvanecimiento
+    }, 800); // Tiempo de la transición de desvanecimiento
 }, 3000); // Cambia de imagen cada 3 segundos
 
 // Verificación de carga de imágenes
