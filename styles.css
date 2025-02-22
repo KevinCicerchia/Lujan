@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Asegura que nada se salga del contenedor */
+}
+
+h1 {
+    margin-bottom: 20px;
+    z-index: 2;
+    color: #08ebcd; /* Cambia el color del texto del encabezado */
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hour-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #08c5eb; /* Cambia el color de fondo de los botones */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .hour-button {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hour-button {
+        width: 80px;
+        font-size: 0.7rem;
+    }
+}
